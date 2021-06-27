@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+
+</head>
+<body>
+   
+    {% if exibir_imagem %}
+    <div class="classe">
+        <h1><b> {{jogo1}} </b></h1>
+        <img src="{{imagem_triste}}" width="400" alt="imagem-triste"/>
+        
+    </div>
+    
+    <div class= 'classe_nome'> Neymar tá 'TITE' </div>
+    
+    {% else %}
+    <div class="classe">
+        <h1><b> {{jogo2}} </b></h1>
+        <img src="{{imagem_feliz}}"  width="400" alt="imagem-feliz"/>
+        
+    </div>
+    
+    <div class='classe_nome'> Ney tá 'ON'</div>
+
+    {% endif %}
+
+
+    
+
+
+
+
+
+
+
+</body>
+</html>
